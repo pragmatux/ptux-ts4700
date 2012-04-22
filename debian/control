@@ -1,0 +1,18 @@
+Source: ptux-ts4700
+Section: embedded
+Priority: extra
+Maintainer: Ryan Kuester <rkuester@insymbols.com>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.8.4
+
+Package: ptux-ts4700
+Architecture: any
+Description: Pragmatux for TS-4700
+ This is the metapackage for Pragmatux on the Technologic Solutions TS-4700
+ Computer on Module.
+Depends:
+ ptux-base,
+ getty-s0-run-ptux,
+ devnodes-ts4700,
+ linux-image-ts4700,
+ bootsplash-ts4700
