@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = "configure" ]
+then
+	mkdir -p /etc/sv/startup.d
+	ln -s /usr/share/ptux-ts4700/expandfs.sh /etc/sv/startup.d/expandfs.sh
+	/usr/share/ptux-ts4700/expandfs.sh
+fi
+
+##DEBHELPER##
